@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Horror Drops Verification</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .skull {
+      width: 160px;
+      height: 160px;
+      background-image: url('https://i.imgur.com/b9MTz1m.png'); /* Replace w/ brightened skull if you want */
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: drop-shadow(0 0 25px red);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 10px red); }
+      50% { transform: scale(1.07); filter: drop-shadow(0 0 25px red); }
+      100% { transform: scale(1); filter: drop-shadow(0 0 10px red); }
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-top: 20px;
+      color: #ff1d1d;
+      text-shadow: 0 0 12px red;
+      font-weight: 900;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ccc;
+      width: 80%;
+      max-width: 400px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background: #dc2626;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 0 10px red;
+      transition: 0.2s ease-in-out;
+    }
+
+    .button:hover {
+      background: #a80b0b;
+      box-shadow: 0 0 18px red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="skull"></div>
+
+  <h1>You're Verified!</h1>
+  <p>Your email has been successfully confirmed. You are now verified for <b>Horror Drops</b>.</p>
+
+  <!-- Replace link below with your Google Play or Horror Drops URL -->
+  <a class="button" href="#" target="_blank">Launch Horror Drops</a>
+
+</body>
+</html>
